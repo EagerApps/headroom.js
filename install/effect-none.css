@@ -6,6 +6,6 @@
   z-index: 10000;
 }
 
-.headroom.headroom-unpinned {
+.headroom-unpinned {
   display: none;
 }
