@@ -1,0 +1,44 @@
+{
+  "resources": {
+    "body": [
+      {
+        "type": "style",
+        "src": "./install/effect-{{ options.effect }}.css"
+      },
+      {
+        "type": "script",
+        "src": "./dist/headroom.js"
+      },
+      {
+        "type": "script",
+        "src": "./install/helper.js"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "header": {
+        "order": 1,
+        "title": "Header Element",
+        "description": "Select your page's header or nav",
+        "type": "string",
+        "format": "selector"
+      },
+      "effect": {
+        "order": 2,
+        "title": "Animation Effect",
+        "description": "What animation should be used to show the header when the user scrolls up?",
+        "type": "string",
+        "enum": ["none", "slide", "swing", "flip", "bounce"],
+        "enumNames": {
+          "none": "None",
+          "slide": "Slide",
+          "swing": "Swing",
+          "flip": "Flip",
+          "bounce": "Bounce"
+        },
+        "default": "none"
+      }
+    }
+  }
+}
