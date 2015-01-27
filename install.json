@@ -20,7 +20,7 @@
       "header": {
         "order": 1,
         "title": "Header Element",
-        "description": "Select your page's header or nav",
+        "description": "Select your page’s header or nav",
         "type": "string",
         "format": "selector"
       },
