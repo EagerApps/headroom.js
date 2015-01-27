@@ -1,0 +1,26 @@
+.headroom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+
+  transition: transform .5s ease-in-out;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  -moz-transition: -moz-transform .5s ease-in-out;
+  -o-transition: -o-transform .5s ease-in-out
+}
+
+.headroom.headroom--pinned {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0)
+}
+
+.headroom.headroom--unpinned, .headroom.headroom--pinned.headroom--top {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%)
+}

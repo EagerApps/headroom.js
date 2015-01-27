@@ -29,15 +29,14 @@
         "title": "Animation Effect",
         "description": "What animation should be used to show the header when the user scrolls up?",
         "type": "string",
-        "enum": ["none", "slide", "swing", "flip", "bounce"],
+        "enum": ["none", "fade", "slide", "swing"],
         "enumNames": {
           "none": "None",
+          "fade": "Fade",
           "slide": "Slide",
-          "swing": "Swing",
-          "flip": "Flip",
-          "bounce": "Bounce"
+          "swing": "Swing"
         },
-        "default": "none"
+        "default": "slide"
       }
     }
   }
